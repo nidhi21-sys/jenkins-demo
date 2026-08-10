@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout') {
 
             steps {
-                git 'https://github.com/nidhi21-sys/jenkins-demo.git'
+                git branch: 'main', url: 'https://github.com/nidhi21-sys/jenkins-demo.git', credentialsId: 'github-token'
             }
 
         }
